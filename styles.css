@@ -56,7 +56,7 @@ nav .inner {
   justify-content: space-between;
   gap: 20px;
 }
-nav .logo {
+nav .logo, footer .logo {
   font-weight: 800;
   font-size: 20px;
   color: var(--text);
@@ -65,8 +65,8 @@ nav .logo {
   align-items: center;
   gap: 8px;
 }
-nav .logo:hover { text-decoration: none; }
-nav .logo .dot {
+nav .logo:hover, footer .logo:hover { text-decoration: none; }
+nav .logo .dot, footer .logo .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -124,7 +124,7 @@ nav .links a:hover { color: var(--text); text-decoration: none; }
   position: relative;
   z-index: 1;
   padding-top: 80px;
-  padding-bottom: 96px;
+  padding-bottom: 80px;
   text-align: center;
 }
 .tag {
@@ -163,7 +163,7 @@ h1 {
   margin-bottom: 16px;
 }
 .hero h1 {
-  font-size: 60px;
+  font-size: 64px;
   font-weight: 800;
   letter-spacing: -0.035em;
   line-height: 1.02;
@@ -208,13 +208,106 @@ h1 {
 .appstore-pill .small { color: var(--text-faint); font-size: 11px; display: block; font-weight: 400; }
 .appstore-pill .big { font-size: 15px; font-weight: 600; line-height: 1.1; }
 
+/* Hodie card preview */
+.preview-wrap {
+  margin: 56px auto 0;
+  perspective: 1200px;
+  display: flex;
+  justify-content: center;
+}
+.hodie-card {
+  width: 280px;
+  height: 380px;
+  border-radius: 26px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-hi);
+  box-shadow:
+    0 50px 100px rgba(255, 45, 111, 0.18),
+    0 25px 60px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transform: rotateX(2deg) rotateY(-4deg);
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.hodie-card:hover {
+  transform: rotateX(0) rotateY(0);
+}
+.hodie-card-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 28% 28%, rgba(255, 130, 160, 0.32), transparent 55%),
+    radial-gradient(circle at 78% 82%, rgba(140, 80, 110, 0.5), transparent 55%),
+    linear-gradient(135deg, #2a1822 0%, #1a0f15 60%, #0f0810 100%);
+}
+.hodie-card-front {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 92px;
+  height: 124px;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 50% 32%, rgba(220, 180, 200, 0.28), transparent 60%),
+    linear-gradient(135deg, #3a2530 0%, #1a1015 100%);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
+}
+.hodie-card-badge {
+  position: absolute;
+  top: 22px;
+  left: 18px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 11px 6px 9px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.hodie-card-badge .bdot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px rgba(255, 45, 111, 0.9);
+}
+.hodie-card-meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 60px 22px 22px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 25%, transparent);
+  text-align: left;
+}
+.hodie-card-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.hodie-card-sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.72);
+  margin-top: 4px;
+}
+
 /* Body type */
 h2 {
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: -0.018em;
-  margin: 44px 0 14px;
-  line-height: 1.3;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  line-height: 1.25;
 }
 h3 {
   font-size: 17px;
@@ -259,7 +352,20 @@ th {
   margin-bottom: 32px;
 }
 
-/* Cards */
+/* Sections */
+.section {
+  padding: 60px 0 16px;
+}
+.section h2 {
+  text-align: center;
+}
+.section .sub {
+  color: var(--text-dim);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Feature cards */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -293,29 +399,91 @@ th {
 .card h3 { margin: 0 0 6px; }
 .card p { margin-bottom: 0; color: var(--text-dim); font-size: 15px; }
 
-/* Section spacing for home */
-.section {
-  padding: 56px 0 12px;
+/* Steps */
+.steps {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 14px;
 }
-.section h2 {
-  text-align: center;
-  margin: 0 0 8px;
+.steps li {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 0;
 }
-.section .sub {
+.step-num {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-warm));
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(255, 45, 111, 0.4);
+}
+.steps h3 { margin: 4px 0 6px; }
+.steps p { margin: 0; color: var(--text-dim); font-size: 15px; }
+
+/* FAQ */
+.faq {
+  display: grid;
+  gap: 10px;
+}
+.faq details {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+.faq details[open] { border-color: var(--border-hi); }
+.faq summary {
+  cursor: pointer;
+  padding: 18px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  user-select: none;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+";
+  font-size: 22px;
+  color: var(--text-faint);
+  font-weight: 400;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.faq details[open] summary::after {
+  transform: rotate(45deg);
+  color: var(--accent);
+}
+.faq details > p {
+  padding: 0 20px 20px;
   color: var(--text-dim);
-  text-align: center;
-  margin-bottom: 28px;
+  margin: 0;
 }
 
+/* Link list */
 .link-list {
   list-style: none;
   padding: 0;
   display: grid;
   gap: 8px;
 }
-.link-list li {
-  margin: 0;
-}
+.link-list li { margin: 0; }
 .link-list a {
   display: flex;
   justify-content: space-between;
@@ -356,25 +524,53 @@ th {
 /* Footer */
 footer {
   border-top: 1px solid var(--border);
-  padding: 36px 24px;
+  padding: 48px 24px 24px;
   color: var(--text-faint);
   font-size: 14px;
   margin-top: 40px;
+  background: var(--bg);
 }
-footer .inner {
+.footer-grid {
   max-width: var(--max);
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 18px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
 }
-footer .links a {
+.footer-grid h4 {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+.footer-grid a {
   color: var(--text-dim);
-  margin-left: 18px;
+  display: block;
+  padding: 4px 0;
 }
-footer .links a:first-child { margin-left: 0; }
-footer .links a:hover { color: var(--text); text-decoration: none; }
+.footer-grid a:hover { color: var(--text); text-decoration: none; }
+.footer-tag {
+  margin-top: 12px;
+  color: var(--text-faint);
+  font-size: 14px;
+  max-width: 240px;
+}
+.footer-meta {
+  display: block;
+  margin-top: 8px;
+  color: var(--text-faint);
+  font-size: 13px;
+}
+.footer-bottom {
+  max-width: var(--max);
+  margin: 20px auto 0;
+  color: var(--text-faint);
+  font-size: 13px;
+}
 
 /* Entrance animation */
 @media (prefers-reduced-motion: no-preference) {
@@ -384,15 +580,21 @@ footer .links a:hover { color: var(--text); text-decoration: none; }
   .fade-in:nth-child(2) { animation-delay: 0.08s; }
   .fade-in:nth-child(3) { animation-delay: 0.16s; }
   .fade-in:nth-child(4) { animation-delay: 0.24s; }
+  .fade-in:nth-child(5) { animation-delay: 0.32s; }
 }
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+@media (max-width: 700px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
+}
+
 @media (max-width: 600px) {
   h1 { font-size: 32px; }
-  .hero h1 { font-size: 40px; }
+  .hero h1 { font-size: 44px; }
   h2 { font-size: 22px; }
   .lead { font-size: 17px; }
   .hero .wrap { padding-top: 56px; padding-bottom: 64px; }
@@ -401,7 +603,9 @@ footer .links a:hover { color: var(--text); text-decoration: none; }
   .wrap { padding: 28px 18px 60px; }
   table { font-size: 13.5px; }
   th, td { padding: 10px 10px; }
-  footer .inner { flex-direction: column; }
-  footer .links a { margin-left: 0; margin-right: 16px; }
-  .section { padding: 40px 0 8px; }
+  .section { padding: 44px 0 8px; }
+  .hodie-card { width: 240px; height: 320px; }
+  .hodie-card-front { width: 78px; height: 102px; }
+  .steps li { grid-template-columns: 36px 1fr; padding: 18px; gap: 14px; }
+  .step-num { width: 30px; height: 30px; font-size: 13px; }
 }
