@@ -1,6 +1,6 @@
 # Hodie — website
 
-Minimal static site hosting the legal and safety documents for the [Hodie](https://github.com/reasj2/hodiewebsit) iOS dating app, operated by Migla SIA (Riga, Latvia).
+Minimal static site hosting the legal and safety documents for the [Hodie](https://github.com/reasj2/hodiewebsit) iOS dating app, operated by SIA "Miglai" (Riga, Latvia).
 
 ## Pages
 
