@@ -92,21 +92,24 @@ nav .links a:hover { color: var(--text); }
 .hero::before {
   content: "";
   position: absolute;
-  top: -180px;
+  top: -220px;
   left: 50%;
   transform: translateX(-50%);
-  width: 700px;
-  height: 500px;
-  background: radial-gradient(ellipse at center, rgba(255, 45, 95, 0.18), transparent 65%);
-  filter: blur(60px);
+  width: 820px;
+  height: 560px;
+  background:
+    radial-gradient(ellipse at center, rgba(255, 45, 95, 0.24), transparent 60%),
+    radial-gradient(ellipse at 50% 60%, rgba(255, 60, 100, 0.08), transparent 70%);
+  filter: blur(50px);
   pointer-events: none;
   z-index: 0;
 }
 .hero .wrap {
   position: relative;
   z-index: 1;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
 }
 
 .eyebrow {
@@ -135,23 +138,26 @@ h1 {
   color: var(--text);
 }
 .hero h1 {
-  font-size: 60px;
+  font-size: 64px;
   font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 1.02;
-  margin-bottom: 24px;
-  max-width: 600px;
+  margin: 0 auto 26px;
+  max-width: 640px;
 }
 .hero h1 em {
+  font-family: ui-serif, "Iowan Old Style", "Apple Garamond", "Baskerville", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: 500;
+  letter-spacing: -0.025em;
+  padding-right: 0.02em;
 }
 
 .lead {
   color: var(--text-dim);
   font-size: 18px;
   line-height: 1.55;
-  margin-bottom: 36px;
+  margin: 0 auto 40px;
   max-width: 520px;
 }
 
@@ -267,8 +273,8 @@ th {
 /* Sections (homepage only — scoped to .section) */
 .section {
   border-top: 1px solid var(--border);
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 88px;
+  padding-bottom: 88px;
 }
 .section .kicker {
   font-size: 12px;
@@ -276,21 +282,25 @@ th {
   color: var(--text-dim);
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  margin-bottom: 14px;
+  margin: 0 0 14px;
+  text-align: center;
 }
 .section h2 {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 600;
-  letter-spacing: -0.025em;
-  line-height: 1.15;
-  margin: 0 0 12px;
+  letter-spacing: -0.028em;
+  line-height: 1.12;
+  margin: 0 auto 14px;
+  max-width: 580px;
+  text-align: center;
   color: var(--text);
 }
 .section .section-lead {
   color: var(--text-dim);
   font-size: 16px;
-  margin-bottom: 36px;
-  max-width: 480px;
+  margin: 0 auto 48px;
+  max-width: 460px;
+  text-align: center;
 }
 
 /* Features (text rows, no cards) */
@@ -447,8 +457,10 @@ th {
 /* About paragraph */
 .about-p {
   color: var(--text-dim);
-  max-width: 540px;
+  max-width: 520px;
   font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
 }
 .about-p a { color: var(--text); border-bottom: 1px solid var(--text-faint); }
 .about-p a:hover { color: var(--accent); border-color: var(--accent); }
@@ -514,12 +526,12 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .hero h1 { font-size: 40px; }
-  .hero .wrap { padding-top: 64px; padding-bottom: 72px; }
+  .hero h1 { font-size: 42px; }
+  .hero .wrap { padding-top: 72px; padding-bottom: 80px; }
   h1 { font-size: 28px; }
   h2 { font-size: 20px; }
-  .section { padding-top: 48px; padding-bottom: 48px; }
-  .section h2 { font-size: 24px; }
+  .section { padding-top: 56px; padding-bottom: 56px; }
+  .section h2 { font-size: 26px; }
   nav { padding: 14px 18px; }
   nav .links { gap: 14px; }
   nav .links a { font-size: 13px; }
