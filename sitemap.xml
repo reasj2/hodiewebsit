@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hodieapp.one/</loc>
+    <loc>https://www.hodieapp.one/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://hodieapp.one/privacy</loc>
+    <loc>https://www.hodieapp.one/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hodieapp.one/terms</loc>
+    <loc>https://www.hodieapp.one/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hodieapp.one/community-guidelines</loc>
+    <loc>https://www.hodieapp.one/community-guidelines</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hodieapp.one/support</loc>
+    <loc>https://www.hodieapp.one/support</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
