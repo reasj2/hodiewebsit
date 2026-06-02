@@ -28,7 +28,7 @@
 
   <main class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="meta"><strong>Effective Date:</strong> 2026-05-13 &middot; <strong>Last Updated:</strong> 2026-05-13</p>
+    <p class="meta"><strong>Effective Date:</strong> 2026-06-02 &middot; <strong>Last Updated:</strong> 2026-06-02</p>
 
     <p>Hodie ("we," "us," "our") operates the Hodie mobile application (the "App") — a daily-photo dating app. This Privacy Policy explains what personal data we collect, how we use it, who we share it with, and the rights you have over it.</p>
     <p>By using Hodie you agree to the practices described here. If you don't agree, please don't use the App.</p>
@@ -42,202 +42,136 @@
       <li><strong>Email:</strong> <a href="mailto:support@migla.io">support@migla.io</a></li>
       <li><strong>Latvian commercial register entry:</strong> <a href="https://company.lursoft.lv/miglai/40203733943">company.lursoft.lv/miglai/40203733943</a></li>
     </ul>
-    <p>For EU users we act as the <strong>data controller</strong> for the personal data described below. Because SIA "Miglai" is established in the EU, we are not required to appoint an EU representative under Article 27 of the GDPR.</p>
+    <p>For EU/EEA and UK users we act as the <strong>data controller</strong> for the personal data described below. Because SIA "Miglai" is established in the EU, we are not required to appoint an EU representative under Article 27 of the GDPR.</p>
 
     <h2>2. Data We Collect</h2>
     <p>We only collect what we need to run a dating app safely. Specifically:</p>
 
     <h3>Account &amp; Identity</h3>
     <ul>
-      <li><strong>Phone number</strong> — used as your login identifier via SMS one-time codes.</li>
+      <li><strong>Email address</strong> — used as your login identifier. We send a one-time code to it to sign you in.</li>
       <li><strong>First name</strong> — shown on your profile.</li>
-      <li><strong>Date of birth</strong> — used to verify you are at least 18 and to display your age. We never share your DOB itself; only the calculated age.</li>
-      <li><strong>Gender and dating preferences</strong> — used so we can show you and your matches the right people.</li>
+      <li><strong>Date of birth</strong> — used to verify you are at least 18 and to display your age.</li>
+      <li><strong>Gender and dating preferences</strong> — used so we can show you and your matches the right people. Because the people you ask to be shown can indicate <strong>sexual orientation</strong>, this is treated as special-category data (see Section 4).</li>
     </ul>
 
     <h3>Profile Content</h3>
     <ul>
-      <li><strong>Photos</strong> — your daily Hodie (front + back camera capture). Stored in our object storage and shown on your profile and in other users' swipe feeds.</li>
+      <li><strong>Photos</strong> — your daily Hodie (front + back camera capture) and any photos you add. Stored in our object storage and shown on your profile and in other users' swipe feeds.</li>
       <li><strong>Bio text</strong> — written by you, shown on your profile.</li>
       <li><strong>Interests, quiz answers, school, job, height</strong> — optional fields you fill in.</li>
-      <li><strong>Verification status</strong> — whether you completed selfie verification.</li>
+      <li><strong>Verification status</strong> — whether you completed verification.</li>
     </ul>
 
     <h3>Location</h3>
     <ul>
-      <li><strong>Precise location (latitude / longitude)</strong> — captured once when you grant permission, used to compute distance to other users. We do not continuously track you. You can revoke access at any time in iOS Settings.</li>
+      <li><strong>Precise location (latitude / longitude)</strong> — captured when you grant permission, used to compute distance to other users and show nearby people. You can revoke access at any time in iOS Settings.</li>
       <li><strong>City name</strong> — derived from your location for display only.</li>
     </ul>
 
     <h3>Activity</h3>
     <ul>
-      <li><strong>Swipes (like / pass / spotlight)</strong> — to power matching and the recommendation algorithm.</li>
+      <li><strong>Swipes (like / pass / spotlight)</strong> — to power matching and recommendations.</li>
       <li><strong>Matches and messages</strong> — content of conversations with people you've matched with.</li>
-      <li><strong>Last-active timestamp</strong> — used to display an "Active now" badge to other users.</li>
+      <li><strong>Last-active timestamp</strong> — used to display activity to other users.</li>
       <li><strong>Reports and blocks</strong> — to keep the community safe.</li>
     </ul>
 
     <h3>Purchases</h3>
     <ul>
-      <li><strong>Purchase history of in-app subscriptions and consumables</strong> — provided by Apple. We store a record of what you bought and your current subscription tier. We never receive your payment card details.</li>
+      <li><strong>Purchase history of in-app subscriptions and consumables</strong> — provided by Apple. We store a record of what you bought and your current subscription tier. <strong>We never receive your payment card details.</strong></li>
     </ul>
 
-    <h3>Technical Data</h3>
+    <h3>Technical &amp; Advertising Data</h3>
     <ul>
-      <li><strong>User ID</strong> — the anonymous identifier issued by our authentication provider.</li>
-      <li><strong>Device type and iOS version</strong> — for crash reports and analytics aggregates.</li>
+      <li><strong>User ID</strong> — the identifier issued by our authentication provider.</li>
+      <li><strong>Device identifiers</strong>, including the <strong>Identifier for Advertisers (IDFA)</strong> where you permit it, used for advertising (see Section 5).</li>
+      <li><strong>Device type and iOS version</strong> — for diagnostics and analytics.</li>
+      <li><strong>Product-interaction and advertising data</strong> — how you interact with the app and ads, used for analytics and advertising.</li>
       <li><strong>Push notification token</strong> — only if you grant notification permission.</li>
     </ul>
 
-    <p>We <strong>do not</strong> collect or use: contacts, calendar, microphone (except as required for video recording features, which we don't currently ship), HealthKit, financial account data, or browsing history outside the App. We <strong>do not</strong> track you across other companies' apps or websites, so we do not show the App Tracking Transparency prompt.</p>
-
     <h2>3. How We Use Your Data</h2>
     <table>
-      <thead><tr><th>Purpose</th><th>Data Used</th></tr></thead>
+      <thead><tr><th>Purpose</th><th>Data Used</th><th>Legal Basis (GDPR)</th></tr></thead>
       <tbody>
-        <tr><td>Create and authenticate your account</td><td>Phone number, User ID</td></tr>
-        <tr><td>Show your profile to other users</td><td>First name, age, photos, bio, interests, location-derived distance</td></tr>
-        <tr><td>Power matching and recommendations</td><td>Swipes, location, preferences, gender</td></tr>
-        <tr><td>Run paid features (Hodie+ / Gold, Boosts, Spotlights, Streak Freezes)</td><td>Purchase history, User ID</td></tr>
-        <tr><td>Provide chat</td><td>Message content, match status</td></tr>
-        <tr><td>Prevent abuse, harassment, and fraud</td><td>Reports, blocks, activity logs, device signals</td></tr>
-        <tr><td>Send transactional notifications (new match, new message)</td><td>Push token, User ID</td></tr>
-        <tr><td>Customer support</td><td>Anything you send us in a support email</td></tr>
-        <tr><td>Comply with legal obligations</td><td>Any of the above when legally required</td></tr>
+        <tr><td>Create and authenticate your account</td><td>Email, User ID</td><td>Contract</td></tr>
+        <tr><td>Show your profile to other users</td><td>Name, age, photos, bio, interests, distance</td><td>Contract</td></tr>
+        <tr><td>Power matching and recommendations</td><td>Swipes, location, preferences, gender</td><td>Contract; consent (location)</td></tr>
+        <tr><td>Run paid features (Hodie+ / Gold, Boosts, Spotlights)</td><td>Purchase history, User ID</td><td>Contract</td></tr>
+        <tr><td>Provide chat</td><td>Message content, match status</td><td>Contract</td></tr>
+        <tr><td>Prevent abuse, harassment, and fraud</td><td>Reports, blocks, activity, device signals</td><td>Legitimate interests; legal obligation</td></tr>
+        <tr><td>Send notifications you enabled</td><td>Push token, User ID</td><td>Consent</td></tr>
+        <tr><td>Show advertising, including personalised ads</td><td>IDFA, advertising data, product interaction</td><td>Consent (via App Tracking Transparency)</td></tr>
+        <tr><td>Analytics to improve the Service</td><td>Usage and device data</td><td>Legitimate interests</td></tr>
+        <tr><td>Process orientation/preferences</td><td>Dating preferences</td><td>Explicit consent</td></tr>
+        <tr><td>Comply with law</td><td>Any of the above when legally required</td><td>Legal obligation</td></tr>
       </tbody>
     </table>
-    <p>We do not use your personal data for advertising or sell it to anyone. Ever.</p>
-    <p>We do not share your personal data with third-party AI providers for the purpose of training their models.</p>
 
-    <h2>4. Automated Decision-Making and Profiling</h2>
-    <p>We use automated processing of your data, including some profiling, to:</p>
-    <ul>
-      <li><strong>Generate your swipe feed</strong> — using your stated preferences (age range, distance), gender, and signals from your prior swipe activity to surface profiles you may want to see.</li>
-      <li><strong>Detect and prevent abuse, fraud, and impersonation</strong> — using activity patterns, reports filed against an account, and device signals.</li>
-      <li><strong>Display contextual UI signals</strong> — such as "Active now," distance, and badges based on subscription tier.</li>
-    </ul>
-    <p>These uses do not produce legal effects or similarly significant effects on you within the meaning of Article 22 of the GDPR. You can:</p>
-    <ul>
-      <li>Edit your preferences at any time in Settings to change the profiles surfaced to you.</li>
-      <li>Request <strong>human review</strong> of any moderation decision (account suspension, content removal) by emailing <a href="mailto:support@migla.io">support@migla.io</a>. We respond within 14 days.</li>
-    </ul>
-    <p>We do not use AI to make final moderation decisions without human review.</p>
+    <h2>4. Sensitive (Special-Category) Data</h2>
+    <p>Hodie is a dating service. The preferences you set and the content you share may reveal your <strong>sexual orientation</strong>, which is special-category data under the GDPR. We process it <strong>only with your explicit consent</strong>, given when you create your profile and set your preferences, and <strong>only</strong> to operate the matching service. You can withdraw consent at any time by editing your profile or deleting your account.</p>
 
-    <h2>5. Legal Bases for Processing (EU / UK Users)</h2>
-    <p>Under the GDPR / UK GDPR we rely on:</p>
+    <h2>5. Advertising and Tracking</h2>
+    <p>Users on the <strong>free tier</strong> see ads delivered through <strong>Google AdMob</strong>.</p>
     <ul>
-      <li><strong>Performance of a contract</strong> — to run the dating service you signed up for.</li>
-      <li><strong>Legitimate interests</strong> — to keep the community safe (abuse prevention, moderation, fraud detection).</li>
-      <li><strong>Consent</strong> — for optional permissions like location and push notifications. You can withdraw consent at any time in iOS Settings.</li>
-      <li><strong>Legal obligation</strong> — when we have to respond to lawful requests from law enforcement or regulators.</li>
+      <li>With your permission — requested via Apple's <strong>App Tracking Transparency (ATT)</strong> prompt — AdMob and its partners may use your <strong>IDFA</strong>, <strong>advertising data</strong>, and <strong>product-interaction data</strong> to show and measure <strong>personalised ads</strong>. Under Apple's rules this is "tracking."</li>
+      <li>If you <strong>decline</strong> the ATT prompt, you'll still see ads, but they won't be personalised using your IDFA.</li>
+      <li>You can change this anytime in <strong>iOS Settings → Privacy &amp; Security → Tracking</strong>.</li>
+      <li>Google's processing is described at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> and <a href="https://policies.google.com/technologies/partner-sites">Google's partner-sites notice</a>.</li>
     </ul>
+    <p><strong>Paying subscribers (Hodie+ / Hodie Gold) do not see ads.</strong> We do not sell your personal data for money.</p>
 
     <h2>6. Who We Share Data With</h2>
     <p>We share personal data only with:</p>
     <ol>
-      <li><strong>Supabase</strong> — our backend and storage provider. Hosts our database, authentication, and photo storage. Bound by a Data Processing Agreement. Operates in the EU.</li>
-      <li><strong>Apple</strong> — operates the App Store and processes all in-app purchases. Subject to Apple's privacy policy.</li>
-      <li><strong>An SMS provider</strong> (Twilio, MessageBird, or similar via Supabase Auth) — receives your phone number to deliver the one-time login code. Does not retain it past the verification window.</li>
-      <li><strong>Push notification provider</strong> — Apple Push Notification service. Receives your device token and the contents of notifications you've opted into.</li>
-      <li><strong>Crash reporting and analytics</strong> — if and when we enable them in a future release, we will list them here. We commit to never enabling personalized advertising SDKs.</li>
-      <li><strong>Law enforcement and regulators</strong> — only in response to a valid legal request, and only the minimum data required.</li>
-      <li><strong>NCMEC and equivalent child-safety bodies</strong> — when we are required to report apparent child sexual abuse material under 18 U.S.C. § 2258A or comparable laws.</li>
+      <li><strong>Supabase</strong> — our backend, database, authentication, and photo storage provider. Bound by a Data Processing Agreement.</li>
+      <li><strong>Apple</strong> — operates the App Store, processes all in-app purchases, and delivers push notifications.</li>
+      <li><strong>Email delivery provider</strong> — receives your email address to deliver your one-time login code.</li>
+      <li><strong>Google AdMob</strong> — for advertising, as described in Section 5.</li>
+      <li><strong>Other users</strong> — who see the parts of your profile you choose to make visible (name, age, photos, bio, interests, approximate distance).</li>
+      <li><strong>Law enforcement / authorities</strong> — only in response to a valid legal request, or to protect the safety of users or the public, and only the minimum data required.</li>
     </ol>
-    <p>We do not share your photos, messages, or profile content with anyone other than the other Hodie users you've chosen to be visible to.</p>
+    <p>We do not share your photos or messages with anyone other than the Hodie users you've chosen to be visible to, and our processors above.</p>
 
     <h2>7. International Transfers</h2>
-    <p>Our servers are located in the European Union. If you use Hodie from outside the EU, your data is transferred to the EU, which provides equivalent protection. When we transfer data out of the EU/EEA (for example to the U.S. for Apple Push Notification service), we rely on <strong>Standard Contractual Clauses</strong> approved by the European Commission, or on other lawful transfer mechanisms.</p>
+    <p>Some providers (such as Google) may process data outside the EEA. Where data is transferred outside the EEA/UK, we rely on appropriate safeguards such as the European Commission's <strong>Standard Contractual Clauses</strong>.</p>
 
     <h2>8. How Long We Keep Data</h2>
     <table>
       <thead><tr><th>Data</th><th>Retention</th></tr></thead>
       <tbody>
         <tr><td>Active account profile, photos, matches, messages</td><td>Until you delete your account</td></tr>
-        <tr><td>Phone number (after account deletion)</td><td>Hashed and retained for 30 days for fraud prevention, then deleted</td></tr>
+        <tr><td>Email (after account deletion)</td><td>Retained briefly for fraud prevention, then deleted</td></tr>
         <tr><td>Reports and moderation logs</td><td>Up to 2 years to keep repeat offenders out</td></tr>
-        <tr><td>CSAM reports and law-enforcement preservation requests</td><td>As long as legally required</td></tr>
-        <tr><td>Anonymized usage aggregates</td><td>Indefinitely</td></tr>
-        <tr><td>Purchase records</td><td>As long as Apple or tax law requires</td></tr>
+        <tr><td>Anonymised usage aggregates</td><td>Indefinitely</td></tr>
+        <tr><td>Purchase records</td><td>As long as required for tax/refund/legal purposes</td></tr>
       </tbody>
     </table>
-    <p>When you delete your account from the in-app Settings → Delete Account screen, we remove your profile, photos, swipes, matches, and message history immediately. Backups are purged on a rolling 30-day schedule.</p>
+    <p>When you delete your account (<strong>Settings → Delete Account</strong>), we remove your profile, photos, swipes, matches, and message history without undue delay. Backups are purged on a rolling 30-day schedule. See <a href="account-deletion.html">Deleting Your Account &amp; Data</a>.</p>
 
     <h2>9. Your Rights</h2>
-    <p>Wherever you are, you can:</p>
-    <ul>
-      <li><strong>Access</strong> — see what we have. Open <strong>Settings → Privacy → Download My Data</strong> to export it.</li>
-      <li><strong>Correct</strong> — fix it. Edit your profile in-app at any time.</li>
-      <li><strong>Delete</strong> — wipe it. <strong>Settings → Delete Account</strong> removes everything.</li>
-      <li><strong>Withdraw consent</strong> — revoke location, notifications, or photo access in iOS <strong>Settings → Hodie</strong>.</li>
-      <li><strong>Complain</strong> — to a data protection authority (in the EU, your national DPA; in Latvia, the Data State Inspectorate — <a href="https://www.dvi.gov.lv">dvi.gov.lv</a>).</li>
-    </ul>
+    <p>Wherever you are, you can <strong>access</strong> (Settings → Download My Data), <strong>correct</strong> (edit your profile), <strong>delete</strong> (Settings → Delete Account), <strong>withdraw consent</strong> (revoke location, notifications, tracking or photos in iOS Settings → Hodie), and <strong>complain</strong> to a data protection authority (in Latvia, the Data State Inspectorate — <a href="https://www.dvi.gov.lv">dvi.gov.lv</a>).</p>
+    <h3>EU / UK Users (GDPR)</h3>
+    <p>Rights of access, rectification, erasure, restriction, objection, data portability, and withdrawal of consent. Email <a href="mailto:support@migla.io">support@migla.io</a>; we respond within 30 days.</p>
+    <h3>California Residents (CCPA / CPRA)</h3>
+    <p>You can know, delete, and correct your personal information using the in-app flows above. We do not "sell" personal information for money, but our use of advertising identifiers for personalised ads may be considered "<strong>sharing</strong>" for cross-context behavioural advertising. You can opt out by <strong>declining the App Tracking Transparency prompt</strong> or disabling Tracking in iOS Settings. We will not discriminate against you for exercising any right.</p>
 
-    <h3>Additional Rights for EU / UK Users (GDPR)</h3>
-    <ul>
-      <li>Right to data portability (machine-readable export — already provided in-app).</li>
-      <li>Right to object to processing based on legitimate interests.</li>
-      <li>Right to restriction of processing.</li>
-      <li>Right to lodge a complaint with a supervisory authority.</li>
-    </ul>
-    <p>To exercise any of these, email <a href="mailto:support@migla.io">support@migla.io</a>. We respond within 30 days.</p>
+    <h2>10. Security</h2>
+    <p>We protect your data using TLS for all network traffic, row-level security on our database (so each user can only access their own data), short-lived one-time login codes (no passwords to leak), and periodic security reviews. No system is perfectly secure; if we ever suffer a breach affecting your personal data we will notify you and the relevant authorities as required by law (within 72 hours under the GDPR).</p>
 
-    <h3>Additional Rights for California Residents (CCPA / CPRA)</h3>
-    <ul>
-      <li><strong>Right to know</strong> what personal information we collect (this policy is that disclosure).</li>
-      <li><strong>Right to delete</strong> personal information (same in-app flow).</li>
-      <li><strong>Right to correct</strong> inaccurate personal information.</li>
-      <li><strong>Right to opt out of "sale" or "sharing"</strong> of personal information — we do not sell or share personal information for cross-context behavioral advertising, so this is automatic.</li>
-      <li><strong>Right to limit use of sensitive personal information</strong> — see below.</li>
-      <li><strong>Right to non-discrimination</strong> — we will not deny service for exercising your rights.</li>
-    </ul>
+    <h2>11. Children</h2>
+    <p>Hodie is strictly for users aged <strong>18 and over</strong>. We do not knowingly collect data from anyone under 18 and block accounts under 18 at signup. If you believe a minor is using Hodie, email <a href="mailto:support@migla.io">support@migla.io</a> and we will remove the account.</p>
 
-    <h3>Sensitive Personal Information (California residents)</h3>
-    <p>Under the CPRA, the following categories of information we collect are treated as <strong>sensitive personal information</strong>:</p>
-    <ul>
-      <li><strong>Precise geolocation</strong> — collected once when you grant location permission; used only to compute distance to other users.</li>
-      <li><strong>Information that may reveal sexual orientation</strong> — derived from your dating preferences.</li>
-    </ul>
-    <p>We use sensitive personal information only to:</p>
-    <ul>
-      <li>Provide and operate the dating service you signed up for;</li>
-      <li>Prevent fraud, harassment, and abuse;</li>
-      <li>Comply with our legal obligations.</li>
-    </ul>
-    <p>We do not use or disclose sensitive personal information for any other purpose. <strong>You have the right to limit our use of sensitive personal information.</strong> Because we already restrict use to the purposes above, no separate request is required, but you may email <a href="mailto:support@migla.io">support@migla.io</a> for written confirmation.</p>
-
-    <h3>Shine the Light (California Civil Code § 1798.83)</h3>
-    <p>California residents may request information about our disclosure of personal information to third parties for those parties' direct marketing purposes. <strong>We do not disclose your personal information to any third party for their direct marketing purposes.</strong></p>
-
-    <h2>10. Children's Privacy</h2>
-    <p>Hodie is strictly for users aged <strong>18 and over</strong>. We do not knowingly collect data from anyone under 18. During signup we ask for date of birth and block accounts under 18. If you believe a user under 18 has created an account, email <a href="mailto:support@migla.io">support@migla.io</a> and we will remove it immediately. We report apparent child sexual abuse material to the <strong>National Center for Missing &amp; Exploited Children (NCMEC)</strong> as required by U.S. federal law (18 U.S.C. § 2258A) and cooperate with law enforcement worldwide.</p>
-
-    <h2>11. Security</h2>
-    <p>We protect your data using:</p>
-    <ul>
-      <li>TLS 1.2+ for all network traffic.</li>
-      <li>Row-level security on our database so each user can only access their own data (and what we deliberately surface to them).</li>
-      <li>Phone-only authentication via short-lived one-time codes — no passwords to leak.</li>
-      <li>Periodic security audits and code reviews.</li>
-    </ul>
-    <p>No system is perfectly secure. If we ever suffer a breach affecting your personal data, we will notify you and the relevant authorities as required by law (within 72 hours under GDPR, where feasible).</p>
-
-    <h2>12. Cookies and Similar Technologies</h2>
-    <p>The App does not use cookies. We do use:</p>
-    <ul>
-      <li><strong>Keychain</strong> to store your session token securely on-device.</li>
-      <li><strong>UserDefaults</strong> for non-sensitive UI preferences.</li>
-      <li><strong>Apple's IDFV</strong> (vendor identifier) for crash reporting attribution. Resets when you uninstall the App.</li>
-    </ul>
-    <p>The <a href="https://www.hodieapp.one">hodieapp.one</a> website does not set any tracking cookies.</p>
+    <h2>12. Cookies and On-Device Storage</h2>
+    <p>The App itself does not use browser cookies. It uses the device <strong>Keychain</strong> to store your session securely, <strong>UserDefaults</strong> for UI preferences, and your device <strong>advertising identifier (IDFA)</strong> for advertising as described in Section 5. Our website (hodieapp.one) may use limited cookies — see our <a href="cookie-policy.html">Cookie Policy</a>.</p>
 
     <h2>13. Changes to This Policy</h2>
-    <p>We may update this policy as the App evolves. Material changes are announced via in-app notice and email (if we have one for you). The "Last Updated" date at the top reflects the most recent revision. Continued use of Hodie after a change means you accept the new policy.</p>
+    <p>We may update this policy as the App evolves. Material changes are announced via in-app notice and/or email. The "Last Updated" date at the top reflects the most recent revision.</p>
 
     <h2>14. Contact</h2>
-    <p>For privacy questions, data requests, or complaints:</p>
     <p><strong>Email:</strong> <a href="mailto:support@migla.io">support@migla.io</a><br>
-    <strong>Postal:</strong> SIA "Miglai", Riga, Latvia</p>
-    <p>For all other matters: <a href="mailto:support@migla.io">support@migla.io</a>.</p>
+    <strong>Postal:</strong> SIA "Miglai", "Reķu sala 4", Upesciems, Garkalnes pag., Ropažu nov., LV-2137, Latvia</p>
   </main>
 
   <footer>
@@ -251,6 +185,9 @@
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="community-guidelines.html">Community Guidelines</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="account-deletion.html">Delete Account</a>
       </div>
       <div>
         <h4>Company</h4>
